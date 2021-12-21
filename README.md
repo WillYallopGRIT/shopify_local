@@ -1,6 +1,6 @@
 # Shopify Local
 
-A testing and example project set up for local Shopify theme development.
+A testing and example project set up for local Shopify theme development. This aims to serve as some loose instructions and as an example for your own local Shopify local theme setup.
 
 ## Commands
 
@@ -8,6 +8,17 @@ This project uses gulp to handle start the theme-kit watch along with building t
 
 - ```npm install```
 - ```gulp watch```
+
+## Lighthouse CI Github Action
+
+> https://shopify.dev/themes/tools/lighthouse-ci
+
+This repo uses the lighthouse ci github action to run automatic performance and accessibility tests on push.
+
+To get this setup you need to create a custom app in your Shopify dashboard and then store the API key and a few other variables in your github secrets page. You will need these: app_id, app_password, store, password and lhci_github_app_token. Find out more about this with the link above.
+
+The performance and accessiblitly pass metrics can be edited in the ```./.github/workflows/lighthouse-ci.yml``` file. They are the key values to edit are both ```lhci_min_score_performance``` and ```lhci_min_score_accessibility```. 
+
 
 ## How to build this from scratch!
 
