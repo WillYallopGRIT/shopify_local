@@ -2,9 +2,9 @@
     <h1>{{ section.settings.header }}</h1>
 
     {% for block in section.blocks %}
-        {{ block.settings.element_type }}
+        {{ block.settings.element_collection }}
         {% comment %} {% for product in collection.all_products %}
-            {% if product.handle contains block.settings.element_type %}
+            {% if product.handle contains block.settings.element_collection %}
                 {{ product.title }}
             {% endif %} 
         {% endfor %} {% endcomment %}
