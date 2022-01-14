@@ -288,6 +288,7 @@
       "16421728073d77c9f5": {
         "type": "element-table",
         "settings": {
+          "header": "Test"
         }
       }
     },
