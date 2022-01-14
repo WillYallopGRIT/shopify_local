@@ -1,7 +1,10 @@
 <div class="elementTable" data-section-id="{{ section.id }}" data-section-type="video-section">
     <h1>{{ section.settings.header }}</h1>
 
-    {{ section.settings.product1 }}
+    {% for block in section.blocks %}
+        {% assign product_item = all_products[block.settings.product] %}
+        {{ product_item.title }}
+    {% endfor %}
 </div>
 
 {% schema %}
@@ -15,17 +18,25 @@
             "category": "Element Table"
         }
     ],
+    "max_blocks": 20,
+    "blocks": [
+        {
+          "type": "clear-skin",
+          "name": "Clear skin",
+          "settings": [
+            {
+              "type": "product",
+              "id": "product",
+              "label": "Product"
+            }
+          ]
+        }
+    ],
     "settings": [
         {
           "type": "text",
           "id": "header",
           "label": "Header"
-        },
-        {
-            "type": "product",
-            "id": "product1",
-            "label": "Product",
-            "info": "Select the first product!"
         }
     ]
 }
