@@ -4,10 +4,9 @@
     {% for block in section.blocks %}
         hello
         {%- assign collection = collections[block.settings.element_collection] -%}
-        {{ collection.products_count }}
-        {% comment %} {% for product in collection.products %}
+        {% for product in collection.products limit: product_limit %}
             {{ product.price }}
-        {% endfor %} {% endcomment %}
+        {% endfor %}
     {% endfor %}
     
 </div>
