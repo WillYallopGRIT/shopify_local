@@ -5,7 +5,7 @@
         hello
         {%- assign collection = collections[block.settings.element_collection] -%}
         {% for product in collection.products limit: product_limit %}
-            {{ product.price }}
+            {{ product.link }}
         {% endfor %}
     {% endfor %}
     
