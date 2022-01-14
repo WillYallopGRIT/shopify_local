@@ -1,5 +1,7 @@
 <div class="elementTable" data-section-id="{{ section.id }}" data-section-type="video-section">
     <h1>{{ section.settings.header }}</h1>
+
+    {{ section.settings.page2 }}
 </div>
 
 {% schema %}
@@ -21,7 +23,7 @@
         },
         {
             "type": "page",
-            "id": "page",
+            "id": "page2",
             "label": "Page"
           }
     ]
