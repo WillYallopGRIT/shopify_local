@@ -287,6 +287,20 @@
       },
       "16421728073d77c9f5": {
         "type": "element-table",
+        "blocks": {
+          "33cebd6e-ae3a-4522-8c72-a7cee1c1a919": {
+            "type": "element",
+            "settings": {
+              "element-type": "clear-skin",
+              "element-initials": "Sa",
+              "element-name": "Salicylic acid",
+              "element-description": "This is a test"
+            }
+          }
+        },
+        "block_order": [
+          "33cebd6e-ae3a-4522-8c72-a7cee1c1a919"
+        ],
         "settings": {
           "header": "Test"
         }
