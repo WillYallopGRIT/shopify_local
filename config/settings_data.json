@@ -291,10 +291,10 @@
           "33cebd6e-ae3a-4522-8c72-a7cee1c1a919": {
             "type": "element",
             "settings": {
-              "element-type": "clear-skin",
-              "element-initials": "Sa",
-              "element-name": "Salicylic acid",
-              "element-description": "This is a test"
+              "element_collection": "Clear Skin",
+              "element_initials": "Test",
+              "element_name": "Test",
+              "element_description": "Test"
             }
           }
         },
