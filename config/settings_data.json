@@ -287,24 +287,6 @@
       },
       "16421728073d77c9f5": {
         "type": "element-table",
-        "blocks": {
-          "e9cf355a-92a0-439f-9fe6-cdf6412712ce": {
-            "type": "clear-skin",
-            "settings": {
-              "product": "test"
-            }
-          },
-          "1ebcd2c7-2664-438c-a484-e6fc216ea796": {
-            "type": "other-catergory",
-            "settings": {
-              "product": "test"
-            }
-          }
-        },
-        "block_order": [
-          "e9cf355a-92a0-439f-9fe6-cdf6412712ce",
-          "1ebcd2c7-2664-438c-a484-e6fc216ea796"
-        ],
         "settings": {
           "header": "Test"
         }
