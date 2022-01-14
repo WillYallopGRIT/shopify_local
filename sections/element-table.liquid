@@ -2,8 +2,8 @@
     <h1>{{ section.settings.header }}</h1>
 
     {% for block in section.blocks %}
-        {% for product in collection.all_products %}
-            {{ product }}
+        {% for product in collection[block.settings.element_collection] %}
+            {{ product.title }}
         {% endfor %}
     {% endfor %}
 </div>
