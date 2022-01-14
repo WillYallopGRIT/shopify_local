@@ -2,8 +2,13 @@
     <h1>{{ section.settings.header }}</h1>
 
     {% for block in section.blocks %}
-        {% assign product_item = all_products[block.settings.product] %}
-        {{ product_item.price }}
+
+        {% for product in collection.all_products %}
+            {% if product.handle contains block.settings.element_type %}
+                {{ product.title }}
+            {% endif %}
+        {% endfor %}
+
     {% endfor %}
 </div>
 
@@ -26,7 +31,7 @@
           "settings": [
             {
                 "type": "select",
-                "id": "element-type",
+                "id": "element_type",
                 "label": "Element/Ingredient Type",
                 "default": "clear-skin",
                 "options": [
@@ -36,17 +41,17 @@
             },
             {
               "type": "text",
-              "id": "element-initials",
+              "id": "element_initials",
               "label": "Element/Ingredient Initials"
             },
             {
                 "type": "text",
-                "id": "element-name",
+                "id": "element_name",
                 "label": "Element/Ingredient Name"
             },
             {
                 "type": "textarea",
-                "id": "element-description",
+                "id": "element_description",
                 "label": "Element/Ingredient Description"
             }
           ]
