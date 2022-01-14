@@ -1,14 +1,60 @@
 {
   "current": {
+    "color_text": "#162950",
+    "color_body_text": "#6d6d6d",
+    "color_sale_text": "#DA2F0C",
+    "color_button": "#DA2F0C",
+    "color_button_text": "#ffffff",
+    "color_small_button_text_border": "#162950",
+    "color_text_field_text": "#162950",
+    "color_text_field_border": "#909090",
+    "color_text_field": "#ffffff",
+    "color_image_overlay_text": "#ffffff",
+    "color_image_overlay": "#3d3d3d",
+    "image_overlay_opacity": 40,
+    "color_borders": "#e4e4e4",
+    "color_body_bg": "#f8f8f8",
+    "type_header_font": "muli_n6",
+    "type_header_base_size": 26,
+    "type_base_font": "muli_n4",
+    "type_base_size": 18,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "favicon": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "small",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#e8f3f6",
+    "checkout_heading_font": "Roboto",
+    "checkout_body_font": "Source Sans Pro",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#23314e",
+    "checkout_error_color": "#ff6d6d",
     "sections": {
       "header": {
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "",
           "logo_max_width": 135,
           "main_linklist": "main-menu",
           "message": true,
+          "home_page_only": true,
+          "message_text": "Announce something here",
+          "message_link": "",
           "color_bg": "#162950",
           "color_text": "#ffffff"
         }
@@ -17,8 +63,13 @@
         "type": "hero",
         "settings": {
           "alignment": "center",
+          "hero_layout": "full_width",
           "hero_size": "x-large",
-          "text_size": "large"
+          "text_size": "large",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "button_label": "",
+          "button_link": ""
         }
       },
       "slideshow": {
@@ -27,15 +78,21 @@
           "slideshow-0": {
             "type": "image",
             "settings": {
-              "image": "",
-              "alignment": "center center"
+              "alignment": "center center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
             }
           },
           "1492095993817": {
             "type": "image",
             "settings": {
-              "image": "",
-              "alignment": "center"
+              "alignment": "center",
+              "slide_title": "Image slide",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
             }
           }
         },
@@ -46,6 +103,8 @@
         "settings": {
           "slideshow_height": "medium",
           "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": true,
           "autorotate": false,
           "autorotate_speed": 5
         }
@@ -53,6 +112,8 @@
       "featured-collections": {
         "type": "collection",
         "settings": {
+          "title": "Featured collection",
+          "collection": "",
           "grid": 3,
           "rows": 1,
           "show_vendor": true,
@@ -85,6 +146,13 @@
       "1492033809691": {
         "type": "map",
         "settings": {
+          "heading": "Our store",
+          "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+          "map_address": "301 Front St W, Toronto",
+          "button_text": "Get directions",
+          "show_pin": true,
+          "api_key": "",
+          "background_image_position": "center center"
         }
       },
       "1492033877875": {
@@ -93,6 +161,8 @@
           "1492033877875-0": {
             "type": "quote",
             "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
             }
           }
         },
@@ -100,6 +170,7 @@
           "1492033877875-0"
         ],
         "settings": {
+          "title": "Testimonials"
         }
       },
       "1492033924902": {
@@ -108,6 +179,8 @@
           "1492033924902-0": {
             "type": "text",
             "settings": {
+              "title": "Talk about your brand",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
               "width": "100%",
               "alignment": "center",
               "align_text": "center"
@@ -127,16 +200,19 @@
           "1492096252560-0": {
             "type": "featured_collection",
             "settings": {
+              "collection": ""
             }
           },
           "1492096252560-1": {
             "type": "featured_collection",
             "settings": {
+              "collection": ""
             }
           },
           "1492096252560-2": {
             "type": "featured_collection",
             "settings": {
+              "collection": ""
             }
           }
         },
@@ -146,6 +222,7 @@
           "1492096252560-2"
         ],
         "settings": {
+          "title": "Collection list",
           "grid": 3
         }
       },
@@ -177,16 +254,21 @@
           "link_list": {
             "type": "link_list",
             "settings": {
+              "title": "Quick links",
+              "menu": "footer"
             }
           },
           "text": {
             "type": "text",
             "settings": {
+              "title": "Talk about your business",
+              "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
           },
           "newsletter": {
             "type": "newsletter",
             "settings": {
+              "title": "Newsletter"
             }
           }
         },
@@ -196,12 +278,21 @@
           "newsletter"
         ],
         "settings": {
+          "show_payment_icons": false,
           "color_footer_bg": "#f8f8f8",
-          "color_footer_text": "#6d6d6d"
+          "color_footer_text": "#6d6d6d",
+          "show_currency_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "16421728073d77c9f5": {
+        "type": "element-table",
+        "settings": {
         }
       }
     },
     "content_for_index": [
+      "16421728073d77c9f5",
       "hero",
       "featured-collections",
       "slideshow",
@@ -209,51 +300,7 @@
       "1492096252560",
       "1492033877875",
       "1492033809691"
-    ],
-    "color_text": "#162950",
-    "color_body_text": "#6d6d6d",
-    "color_sale_text": "#DA2F0C",
-    "color_borders": "#e4e4e4",
-    "color_button": "#DA2F0C",
-    "color_button_text": "#ffffff",
-    "color_small_button_text_border": "#162950",
-    "color_text_field": "#ffffff",
-    "color_text_field_text": "#162950",
-    "color_text_field_border": "#909090",
-    "color_image_overlay_text": "#ffffff",
-    "color_image_overlay": "#3d3d3d",
-    "image_overlay_opacity": 40,
-    "color_body_bg": "#f8f8f8",
-    "type_header_font": "muli_n6",
-    "type_header_base_size": 26,
-    "type_base_font": "muli_n4",
-    "type_base_size": 18,
-    "share_facebook": true,
-    "share_twitter": true,
-    "share_pinterest": true,
-    "social_twitter_link": "",
-    "social_facebook_link": "",
-    "social_pinterest_link": "",
-    "social_instagram_link": "",
-    "social_tumblr_link": "",
-    "social_snapchat_link": "",
-    "social_youtube_link": "",
-    "social_vimeo_link": "",
-    "favicon": "",
-    "checkout_header_image": "",
-    "checkout_logo_image": "",
-    "checkout_logo_position": "left",
-    "checkout_logo_size": "small",
-    "checkout_body_background_image": "",
-    "checkout_body_background_color": "#ffffff",
-    "checkout_input_background_color_mode": "white",
-    "checkout_sidebar_background_image": "",
-    "checkout_sidebar_background_color": "#e8f3f6",
-    "checkout_heading_font": "Roboto",
-    "checkout_body_font": "Source Sans Pro",
-    "checkout_accent_color": "#1990c6",
-    "checkout_button_color": "#23314e",
-    "checkout_error_color": "#ff6d6d"
+    ]
   },
   "presets": {
     "Default": {
