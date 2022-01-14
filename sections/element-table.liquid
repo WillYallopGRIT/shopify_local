@@ -18,29 +18,38 @@
             "category": "Element Table"
         }
     ],
-    "max_blocks": 20,
+    "max_blocks": 16,
     "blocks": [
         {
-          "type": "clear-skin",
-          "name": "Clear skin",
+          "type": "element",
+          "name": "Element",
           "settings": [
             {
-              "type": "product",
-              "id": "product",
-              "label": "Product"
+                "type": "select",
+                "id": "element-type",
+                "label": "Element/Ingredient Type",
+                "default": "clear-skin",
+                "options": [
+                    { "value": "clear-skin", "label": "Clear Skin" },
+                    { "value": "other-category", "label": "Other Category" }
+                ]
+            },
+            {
+              "type": "text",
+              "id": "element-initials",
+              "label": "Element/Ingredient Initials"
+            },
+            {
+                "type": "text",
+                "id": "element-name",
+                "label": "Element/Ingredient Name"
+            },
+            {
+                "type": "textarea",
+                "id": "element-description",
+                "label": "Element/Ingredient Description"
             }
           ]
-        },
-        {
-            "type": "other-catergory",
-            "name": "Other Category",
-            "settings": [
-              {
-                "type": "product",
-                "id": "product",
-                "label": "Product"
-              }
-            ]
         }
     ],
     "settings": [
